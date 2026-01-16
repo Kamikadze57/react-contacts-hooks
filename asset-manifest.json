@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-contacts-hooks/static/css/main.ba312bdc.css",
-    "main.js": "/react-contacts-hooks/static/js/main.3cb17e0f.js",
+    "main.js": "/react-contacts-hooks/static/js/main.01bd2494.js",
     "index.html": "/react-contacts-hooks/index.html",
     "main.ba312bdc.css.map": "/react-contacts-hooks/static/css/main.ba312bdc.css.map",
-    "main.3cb17e0f.js.map": "/react-contacts-hooks/static/js/main.3cb17e0f.js.map"
+    "main.01bd2494.js.map": "/react-contacts-hooks/static/js/main.01bd2494.js.map"
   },
   "entrypoints": [
     "static/css/main.ba312bdc.css",
-    "static/js/main.3cb17e0f.js"
+    "static/js/main.01bd2494.js"
   ]
 }
