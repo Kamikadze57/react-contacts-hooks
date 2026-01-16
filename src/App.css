@@ -1,0 +1,73 @@
+.add__box,
+.filter__box,
+.contacts__list {
+  justify-content: center;
+  display: flex;
+}
+.add__box {
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 20px;
+}
+.add__form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.add__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__input,
+.add__input {
+  padding: 5px 12px;
+  outline: none;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border 200ms ease-in-out;
+  color: #212121;
+}
+.add__input {
+  padding: 3px 9px;
+}
+.filter__input::placeholder {
+  color: #757575;
+  transition: color 200ms ease-in-out;
+}
+.add__btn,
+.delete__btn {
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 1px solid #757575;
+  color: #212121;
+  background-color: #71f371;
+  transition: background 200ms ease-in-out;
+}
+.add__btn:hover {
+  background-color: #3dcc3d;
+}
+.delete__btn {
+  background-color: #f37171;
+}
+.delete__btn:hover {
+  background-color: #cc3d3d;
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contact__name {
+  font-weight: 500;
+  color: #212121;
+}
