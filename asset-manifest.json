@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-contacts-hooks/static/css/main.ba312bdc.css",
+    "main.js": "/react-contacts-hooks/static/js/main.3c996237.js",
+    "index.html": "/react-contacts-hooks/index.html",
+    "main.ba312bdc.css.map": "/react-contacts-hooks/static/css/main.ba312bdc.css.map",
+    "main.3c996237.js.map": "/react-contacts-hooks/static/js/main.3c996237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba312bdc.css",
+    "static/js/main.3c996237.js"
+  ]
+}
