@@ -1,8 +1,16 @@
+.title, .contacts__title {
+  text-align: center;
+  font-family: 18px;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
 .add__box,
 .filter__box,
 .contacts__list {
-  justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .add__box {
   gap: 5px;
@@ -14,6 +22,7 @@
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  align-items: end;
 }
 .add__label {
   display: flex;

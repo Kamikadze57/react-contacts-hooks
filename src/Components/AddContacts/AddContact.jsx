@@ -1,19 +1,43 @@
-const AddContact = ({ name, number, onNameChange, onNumberChange, onAdd }) => {
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addContact } from "../../redux/contactsSlice";
+
+const AddContact = () => {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const contacts = useSelector((state) => state.contacts.items);
+  const dispatch = useDispatch();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim() === "" || number.trim() === "") return;
+
+    if (contacts.some((c) => c.name.toLowerCase() === name.toLowerCase())) {
+      alert(`${name} is already in contacts.`);
+      return;
+    }
+
+    dispatch(addContact(name, number));
+    setName("");
+    setNumber("");
+  };
+
   return (
     <div className="add__box">
-      <form className="add__form" onSubmit={(e) => e.preventDefault()}>
+      <h1 className="title">Phonebook</h1>
+      <form className="add__form" onSubmit={handleSubmit}>
         <label className="add__label">
           <p>Name</p>
-          <input className="add__input" type="text" name="name" value={name} onChange={onNameChange} />
+          <input className="add__input" type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
         <label className="add__label">
           <p>Phone</p>
-          <input className="add__input" type="text" name="number" value={number} onChange={onNumberChange} />
+          <input className="add__input" type="text" value={number} onChange={(e) => setNumber(e.target.value)} />
         </label>
+        <button className="add__btn" type="submit">
+          Add contact
+        </button>
       </form>
-      <button className="add__btn" type="button" onClick={onAdd}>
-        Add contact
-      </button>
     </div>
   );
 };
