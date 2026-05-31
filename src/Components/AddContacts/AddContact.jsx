@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/operations";
 
 const AddContact = () => {
   const [name, setName] = useState("");
@@ -17,7 +17,7 @@ const AddContact = () => {
       return;
     }
 
-    dispatch(addContact(name, number));
+    dispatch(addContact({ name, phone: number }));
     setName("");
     setNumber("");
   };
