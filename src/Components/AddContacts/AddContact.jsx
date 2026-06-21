@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "../../redux/operations";
+import { contactsSelectors } from "../../redux/contactsSlice";
 
 const AddContact = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
-  const contacts = useSelector((state) => state.contacts.items);
+  const contacts = useSelector(contactsSelectors.selectAll);
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {

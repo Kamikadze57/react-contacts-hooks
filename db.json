@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "email": "swaga@gmail.com",
+      "password": "$2a$10$QlrSUh64KfkcVcmuzURE7uzCO15mXmFTCpYknJ9CFxx5s8mlzZjp.",
+      "id": 1
+    },
+    {
+      "email": "savickijpavel42@gmail.com",
+      "password": "$2a$10$l4UDLbzSBVJ3DrFgFpjAj.Mxa3gFPawDI.iasIhPueDY9R8WHQ1BS",
+      "id": 2
+    },
+    {
+      "email": "wda@gmail.com",
+      "password": "$2a$10$xuepR/vt.Di6gk.HK09LFunfJZmGIsx5stWD.M1AUtKPC9oIZRMoO",
+      "id": 3
+    }
+  ],
+  "contacts": [
+    {
+      "name": " 76",
+      "phone": "86",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "name": "123",
+      "phone": "123",
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "name": "88989",
+      "phone": "8998",
+      "userId": 2,
+      "id": 5
+    }
+  ]
+}
